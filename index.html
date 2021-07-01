@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Start of Header -->
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">Brand Name</div>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <!-- End of Header -->
+    <!-- start of page section -->
+    <section>
+        <h1>this is Page one</h1>
+    </section>
+    <section >
+        <h1>this is Page two</h1>
+    </section>
+    <section>
+        <h1>this is Page three</h1>
+    </section>
+    <section>
+        <h1>this is Page four</h1>
+    </section>
+    <div class="sidebar">
+        <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- End of page section -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" 
+    integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+          $.scrollify({
+            section : "section",
+            easing: "easeOutExpo",
+          });
+        });
+      </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

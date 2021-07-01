@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Start of navbar */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+/* End of Navbar */
+
+/* start of section */
+section {
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section h1 {
+  font-size: 7rem;
+  text-transform: capitalize;
+  text-shadow: 2px 5px 3px black;
+  font-family: "Lobster", cursive;
+}
+section:nth-child(2) {
+  background: rgba(111, 218, 218, 0.918);
+}
+section:nth-child(3) {
+  background: rgb(173, 236, 110);
+}
+section:nth-child(4) {
+  background: rgb(250, 219, 117);
+}
+section:nth-child(5) {
+  background: rgb(164, 117, 238);
+}
+
+/* End of section */
+
+.sidebar ul {
+  position: fixed;
+  top: 40%;
+  right: 1rem;
+  background: whitesmoke;
+}
+.sidebar ul li {
+  list-style-type: square;
+  font-size: 2rem;
+}
+.sidebar ul li.active {
+  list-style-type: circle;
+  font-size: 2rem;
+  color: rgb(93, 224, 81);
+}
