@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sliding</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+     integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Start of Header -->
@@ -19,8 +22,8 @@
             </a>
             <div class="navbar-links">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#second">About</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
@@ -28,40 +31,54 @@
     </header>
     <!-- End of Header -->
     <!-- start of page section -->
-    <section>
+    <section class="panel first" data-section-name="home">
         <h1>this is Page one</h1>
-    </section>
-    <section >
+        <ul class="side-scroller">
+          <li>
+            <a class="active" href="#home">
+              <span class="hover-text"></span>
+          </a>
+          </li>
+          <li>
+            <a  href="#second">
+              <span class="hover-text"></span>
+          </a>
+          </li>
+          <li>
+            <a  href="#third">
+              <span class="hover-text"></span>
+          </a>
+          </li>
+          <li>
+            <a href="#fourth">
+              <span class="hover-text"></span>
+          </a>
+          </li>
+      </ul>
+    </section >
+    <section class="panel second" data-section-name="second">
         <h1>this is Page two</h1>
     </section>
-    <section>
+    <section class="panel third" data-section-name="third">
         <h1>this is Page three</h1>
     </section>
-    <section>
+    <section class="panel fourth" data-section-name="fourth">
         <h1>this is Page four</h1>
     </section>
-    <div class="sidebar">
-        <ul>
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
     <!-- End of page section -->
+    
+    <!-- Start of move Top button -->
+      <div class="top-moveBtn">
+        <a href="#">
+          <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    <!-- End of move Top button -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" 
     integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(function() {
-          $.scrollify({
-            section : "section",
-            easing: "easeOutExpo",
-          });
-        });
-      </script>
     <script src="./js/main.js"></script>
 </body>
 </html>
